@@ -6,28 +6,50 @@
 
 ## Background
 
-Stuart Carnie has ported REminiscence ,Gregory Montoir’s Flashback emulator, over to libretro! REminiscence is a game engine recreation of the 1992/1993 action adventure game Flashback. It is the spiritual successor of Another World/Out Of This World and it distinguishes itself with rotoscoped graphics, polygonal cutscenes, and a Prince of Persia-style gameplay system.
+Stuart Carnie has ported REminiscence, Gregory Montoir’s Flashback emulator, over to libretro! REminiscence is a game engine recreation of the 1992/1993 action adventure game Flashback. It is the spiritual successor of Another World/Out Of This World and it distinguishes itself with rotoscoped graphics, polygonal cutscenes, and a Prince of Persia-style gameplay system.
+
+REminiscence is a rewrite of the engine used in the game ``Flashback`` from Delphine Software. This program is designed as a cross-platform replacement for the original executable.
 
 This port is still a work in progress, however it is in a working state. Currently, it jumps directly into the game, skipping the main menu.
 
 We have also added modplug support to the core for improved music playback.
 
 The REminiscence core has been authored by
-
 - Gregory Montoir
 - Stuart Carnie
 
 The REminiscence core is licensed under
-
 - GPLv3
 
 A summary of the licenses behind RetroArch and its cores can be found [here](../development/licenses.md).
 
 ## Setup
 
-REminiscence is a rewrite of the engine used in the game Flashback from Delphine Software. This program is designed as a cross-platform replacement for the original executable. The game data files (DOS, PC-CD, Amiga, Macintosh) are required. Apart from that, you can buy it [here on GOG](https://www.gog.com/game/flashback) or [here on Steam](https://store.steampowered.com/app/961620/Flashback/). Create a folder with proper naming. Then follow the `Flashback_Data\StreamingAssets\data` folder to access the data of the Flashback you have. Copy all of the files in the data folder to the folder you just created.
+The game data files (DOS, PC-CD, Amiga, Macintosh) are required. You can buy ``Flashback`` [here on GOG](https://www.gog.com/game/flashback) or [here on Steam](https://store.steampowered.com/app/961620/Flashback/).
 
-A visual demonstration of setup REminiscence core can be found [here](https://www.youtube.com/watch?v=46S-FDjSjfo).
+A video guide for setting up the REminiscence core can be found [here](https://www.youtube.com/watch?v=46S-FDjSjfo).
+
+- Create a new folder for your REminiscence game files and name it accordingly (e.g. `Retroarch/downloads/Flashback`).
+- Install Flashback via Steam or GOG.
+- Locate the Flashback data files.
+  - Steam: Right click on the installed game in your library > Manage > Browse local files.
+  - GOG Galaxy: Click on the installed game in your library. Click Options (the button right of Play), Manage installation > Show folder.
+- Open the `Flashback_Data\StreamingAssets\data` folder.
+- Copy all files from the `data` folder into the game files folder you created earlier.
+
+- In Retroarch, go to Online Updater > Core Downloader > and download the `Flashback (REminiscence)` core.
+- Load Core > Flashback (REminiscence).
+- Load Content > go to your folder > select any `.lev` or `.map` file to launch.
+
+### Extra voices and music files
+Core is ready to load levels at this stage, but some voices and music will be missing. To fix this, you'll need a copy of the Amiga version of Flashback.
+- Open `Flashback.lha` in a Zip file manager.
+- Extract all files starting with `mod.` into your folder.
+
+### Extra voices files
+Not all voices work due to REminiscence limitations. You can use `voice.vce` from the Sega CD version of Flashback.
+- Open the Flashback (Sega CD) disc image, and enter the `Data` folder.
+- Extract `VOICE.VCE` into your folder.
 
 ## Extensions
 
