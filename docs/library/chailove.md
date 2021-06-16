@@ -23,6 +23,7 @@ You can do this by going to RetroArch's main menu screen and selecting 'Online U
 <center> ![](../image/core/all/downloads.png) </center>
 
 - Select 'Floppy Bird.chailove'.
+- If you can't see any .chailove files, go to the main menu, then 'Settings', then 'File Browser', and untick 'Filter Unknown Extensions'.
 
 - If you are asked which core to select, choose 'ChaiLove'.
 
